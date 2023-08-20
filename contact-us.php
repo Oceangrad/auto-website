@@ -1,19 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-<title>Контакты</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="Place your description here" />
-<meta name="keywords" content="put, your, keyword, here" />
-<meta name="author" content="Templates.com - website templates provider" />
-<link href="style.css" rel="stylesheet" type="text/css" />
-<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
-<script src="js/script.js" type="text/javascript"></script>
-</head>
+<?php $title="Контакты"; require_once "php/templates/head.php"; ?>
 <body id="page5">
 <div id="main">
 <!-- HEADER -->
-	<?php require_once "php/header.php" ?>
+<?php require_once "php/templates/header.php" ?>
 <!-- CONTENT -->
 	<div id="content"><div class="ic">More Website Templates at TemplateMonster.com!</div>
 		<div class="box">
@@ -67,11 +56,11 @@
 					<div id="feedbackResponse"></div>
 				</div>
 				<div class="col-2">
-				<?php 
-						include_once "php/aside.php";
+					<?php 
+						include_once "php/templates/aside.php"; 
 
-						$currentLink = "contact-us.php?";  
-						include_once "php/auth.php"; 
+						$currentLink = "contact-us.php";  
+						include_once "php/templates/auth.php"; 
 					?>
 				</div>
 			</div>
@@ -79,7 +68,7 @@
 	</div>
 <!-- FOOTER -->
 
-<?php include_once "php/footer.php"; ?>
+<?php include_once "php/templates/footer.php"; ?>
 
 </div>
 </body>
