@@ -30,10 +30,32 @@
 					}
 
 					echo 
-					"<h3>".$data['marka']." ".$data['model']."</h3><br>
-					<img id='currentCarImg' src='".$data['img']."'><br><br>
-					<button class='btn' onclick='sendCarRequest(".$_SESSION['userID'].", ".$_GET['carID'].")'><em><b>Подать заявку на покупку<span>Подать заявку на покупку</span></b></em></button><br><br>
-					";
+					"<div class='main-info'>
+						<h3>".$data['marka']." ".$data['model']."</h3><br>
+
+						<div class='card-car'>
+							<div class='car-img'>
+								<img id='currentCarImg' src='".$data['img']."'>
+							</div><br><br>
+
+							<div class='text-box'>
+								<p>Марка автомобиля: --------</p>
+								<p>Модель автомобиля: --------</p>
+								<p>Год выпуска: --------</p>
+								<p>Кузов: --------</p>
+								<p>Объём двигателя: --------</p>
+								<p>Тип топлива: --------</p>
+								<p>Привод: --------</p>
+								<p>Коробка передач: --------</p>	
+							</div>
+						</div>
+						<div class='lover-info'>
+							<p class='cen-car'>Цена: <b>--------</b></p>
+							<button class='car-btn' onclick='sendCarRequest(".$_SESSION['userID'].", ".$_GET['carID'].")'><b>Подать заявку на покупку</b></button><br><br>
+						</div>
+
+						
+					</div>";
 					?>
 					<div id='response'></div><br>
 				</div>
