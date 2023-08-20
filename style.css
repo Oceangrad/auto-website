@@ -146,6 +146,7 @@ h3 b,h4 b {color:#1f7dd2}
 #footer a {color:#d1d8db}
 
 /* Новая инфа */
+
 .padding{
     margin-top: 30px;
 }
@@ -157,5 +158,31 @@ hr{
     width: 0 auto;
 }
 img#currentCarImg{
-    width: 50em;
+    width: 53.5em;
+}
+/* Карточка машин */
+
+.cen-car{
+    font-size: 2.4em;
+    margin: 0 2em;
+}
+.car-btn{
+    font-size: 1.5em;
+    height: 50px;
+    padding: 0 0.5em;
+}
+.car-img{
+    float: left;
+
+}
+.text-box{
+    margin: 5px 20px;
+    font-size: 1.25em;
+}
+.lover-info{
+    display: flex;
+    justify-content: space-between;
+}
+.card-car{
+    display: flex;
 }
