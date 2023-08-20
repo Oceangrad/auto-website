@@ -39,18 +39,18 @@
 							</div><br><br>
 
 							<div class='text-box'>
-								<p>Марка автомобиля: --------</p>
-								<p>Модель автомобиля: --------</p>
-								<p>Год выпуска: --------</p>
-								<p>Кузов: --------</p>
-								<p>Объём двигателя: --------</p>
-								<p>Тип топлива: --------</p>
-								<p>Привод: --------</p>
-								<p>Коробка передач: --------</p>	
+								<p>Марка: ".$data['marka']."</p>
+								<p>Модель: ".$data['model']."</p>
+								<p>Год выпуска: ".$data['year']."</p>
+								<p>Кузов: ".$data['kuzov']."</p>
+								<p>Объём двигателя: ".$data['V']." л.</p>
+								<p>Тип топлива: ".$data['tipOil']."</p>
+								<p>Привод: ".$data['privod']."</p>
+								<p>Коробка передач: ".$data['boxPered']."</p>	
 							</div>
 						</div>
 						<div class='lover-info'>
-							<p class='cen-car'>Цена: <b>--------</b></p>
+							<p class='cen-car'>Цена: <b>".$data['cen']." руб.</b></p>
 							<button class='car-btn' onclick='sendCarRequest(".$_SESSION['userID'].", ".$_GET['carID'].")'><b>Подать заявку на покупку</b></button><br><br>
 						</div>
 
