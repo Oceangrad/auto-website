@@ -2,12 +2,12 @@
 
 <div id="header">
     <div class="row-1">
-        <div class="fleft"><a href="home.php"><img src="images/logo.gif" alt="" /></a></div>
+        <div class="fleft"><a href="home.php"><img src="../images/logo.gif" alt="" /></a></div>
         <div class="fright">
             <ul>
-                <li><a href="home.php"><img src="images/icon1.gif" alt="" /></a></li>
-                <li><a href="contact-us.php"><img src="images/icon2-act.gif" alt="" /></a></li>
-                <li><a href="sitemap.php"><img src="images/icon3.gif" alt="" /></a></li>
+                <li><a href="home.php"><img src="../images/icon1.gif" alt="" /></a></li>
+                <li><a href="contact-us.php"><img src="../images/icon2-act.gif" alt="" /></a></li>
+                <li><a href="sitemap.php"><img src="../images/icon3.gif" alt="" /></a></li>
             </ul>
         </div>
     </div>
@@ -27,5 +27,5 @@
             <a href="catalog.php" id="catalog-btn"><b>Каталог</b></a>
         </div>
     </div>
-    <div class="extra"><img src="images/header-img.png" alt="" /></div>
+    <div class="extra"><img src="../images/header-img.png" alt="" /></div>
 </div>

@@ -11,7 +11,7 @@
                 }
                 
                 if(isset($_POST['lastName']) && isset($_POST['password'])){
-                    include "php/modules/check-for-auth.php";
+                    include "../controllers/check-for-auth.php";
                 }
 
                 ?>

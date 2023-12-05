@@ -3,7 +3,7 @@
 <head>
 <title><?php echo $title; ?></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="util/style.css" rel="stylesheet" type="text/css" />
-<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
-<script src="js/script.js" type="text/javascript"></script>
+<link href="../util/style.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="../js/script.js" type="text/javascript"></script>
 </head>

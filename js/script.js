@@ -23,7 +23,7 @@ function sendFeedback(senderName, email, msgName, msg){
   data = JSON.stringify(data)
 
   let xhr = new XMLHttpRequest()
-  xhr.open("POST", "./php/modules/send-feedback.php")
+  xhr.open("POST", "../controllers/send-feedback.php")
   xhr.send(data)
 
   xhr.onreadystatechange = function(){
@@ -53,7 +53,7 @@ function sendCarRequest(userID, carID){
   }
 
   var xhr = new XMLHttpRequest()
-  xhr.open('POST', './php/modules/send-car-request.php')
+  xhr.open('POST', '../controllers/send-car-request.php')
   xhr.send(data)
   xhr.onreadystatechange = function (){
     if(xhr.readyState != 4 || xhr.status != 200){
@@ -77,7 +77,7 @@ function sendCarRequest(userID, carID){
 
 function getCatalog(){
   var xhr = new XMLHttpRequest()
-  xhr.open('GET', './php/modules/catalogVivod.php', true)
+  xhr.open('GET', '../controllers/catalogVivod.php', true)
   xhr.send()
   xhr.onreadystatechange = function (){
     if(xhr.readyState != 4 || xhr.status != 200){
@@ -91,7 +91,7 @@ function getCatalog(){
     for(car of data){
       box.html(box.html()+ 
       '<a href="car.php?carID=' + car.id + '">'+
-        '<img src="' + car.img + '"/>'+
+        '<img src="../' + car.img + '"/>'+
         '<h3>' + car.marka + ' ' + car.model + '</h3><br>'+
         '<h4>Цена: ' + car.cen + ' руб</h4><br>'+
       '</a>')
